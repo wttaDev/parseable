@@ -32,4 +32,4 @@ WORKDIR /parseable
 
 COPY --from=builder /parseable/target/release/parseable /usr/bin/parseable
 
-CMD ["parseable"]
+CMD ["parseable", "local-store"]
